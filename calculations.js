@@ -2905,8 +2905,1052 @@ else {
   document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
 }
 }
+//FENNEL
+if(num1===89){
+  const w1=800,w2=1000,N=30/hq,P=20/hq,K=20/hq,s1=8,sK=0.001,t1=3,ar=120,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-2"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=600,w2=800,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-2"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1000,w2=1200,ar=150;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-2"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1200,w2=1500,ar=180;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-2"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
 
-//
+//FENNUGREEK
+if(num1===90){
+  const w1=600,w2=800,N=20/hq,P=30/hq,K=20/hq,s1=25,sK=0.001,t1=1,ar=60,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-2"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=400,w2=600,ar=50;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-2"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=800,w2=1000,ar=80;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-2"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1000,w2=1200,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-2"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+//GINGER
+if(num1===91){
+  const w1=1200,w2=1500,N=30/hq,P=20/hq,K=20/hq,s1=500,sK=0.001,t1=8,ar=200,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-9"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value = "Ginger is typically propagated using rhizomes rather than seeds"
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=150;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-9"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  "Ginger is typically propagated using rhizomes rather than seeds"
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=250;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-9"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  "Ginger is typically propagated using rhizomes rather than seeds"
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=300;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-9"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  "Ginger is typically propagated using rhizomes rather than seeds"
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+//NUTMEG
+if(num1===92){
+  const w1=1200,w2=1500,N=10/hq,P=10/hq,K=20/hq,s1=15,sK=0.001,t1=7,ar=200,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-9"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=150;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-9"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=250;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-9"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =(s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=300;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-9"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//TURMERIC:
+if(num1===93){
+  const w1=1200,w2=1500,N=60/hq,P=30/hq,K=30/hq,s1=15,sK=0.001,t1=7,ar=200,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-9"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value = "Turmeric is typically propagated using rhizomes rather than seeds"
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-9"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = "Turmeric is typically propagated using rhizomes rather than seeds"
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=180;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-9"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value ="Turmeric is typically propagated using rhizomes rather than seeds"
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=200;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-9"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  "Turmeric is typically propagated using rhizomes rather than seeds"
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+//STAR ANISE
+if(num1===94){
+  const w1=1200,w2=1500,N=50/hq,P=30/hq,K=30/hq,s1=4,sK=0.001,t1=3,ar=200,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-4"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=180;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=200;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+//BAY LEAF
+if(num1===95){
+  const w1=1200,w2=1500,N=30/hq,P=20/hq,K=20/hq,s1=4,sK=0.001,t1=2,ar=120,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-3"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-3"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=150;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-3"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=180;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-3"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+//CAROM SEEDS
+
+if(num1===96){
+  const w1=800,w2=1000,N=30/hq,P=20/hq,K=20/hq,s1=4,sK=0.001,t1=3,ar=120,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-4"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=600,w2=800,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1000,w2=1200,ar=150;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1200,w2=1500,ar=180;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//ASAFOETIDA
+if(num1===97){
+  const w1=800,w2=1000,N=20/hq,P=10/hq,K=10/hq,s1=3,sK=0.001,t1=3,ar=120,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-4"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=600,w2=800,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1000,w2=1200,ar=150;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1200,w2=1500,ar=180;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//MUSTARD SEEDS
+if(num1===98){
+  const w1=800,w2=1000,N=40/hq,P=20/hq,K=20/hq,s1=7,sK=0.001,t1=5,ar=120,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-4"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=600,w2=800,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1000,w2=1200,ar=150;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1200,w2=1500,ar=180;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+//SAFFRON
+if(num1===99){
+  const w1=500,w2=800,N=40/hq,P=20/hq,K=20/hq,s1=7,sK=0.001,t1=3,ar=80,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-4"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =  "Saffron is  grown from corms(planting)."
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=600,w2=800,ar=60;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = "Saffron is  grown from corms(planting)."
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1000,w2=1200,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = "Saffron is  grown from corms(planting)."
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1200,w2=1500,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = "Saffron is  grown from corms(planting)."
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+//TAMARIND
+if(num1===100){
+  const w1=1500,w2=1200,N=40/hq,P=20/hq,K=20/hq,s1=15,sK=0.001,t1=6,ar=150,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-8"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-8"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=180;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-8"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=200;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-8"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//CURRY LEAVES
+
+if(num1===101){
+  const w1=1000,w2=1200,N=10/hq,P=10/hq,K=10/hq,s1=5,sK=0.001,t1=3,ar=120,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-4"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=800,w2=1000,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1200,w2=1500,ar=150;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1500,w2=1800,ar=180;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+//MACE
+
+if(num1===102){
+  const w1=1200,w2=1500,N=10/hq,P=10/hq,K=10/hq,s1=300,sK=0.001,t1=6,ar=150,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-8"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-8"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=180;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-8"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-8"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+//LONG PEPPER:
+if(num1===103){
+  const w1=1200,w2=1500,N=10/hq,P=10/hq,K=10/hq,s1=10,sK=0.001,t1=3,ar=150,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-4"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1200,w2=1500,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=150;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1200,w2=1500,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//WHITE PEPPER
+
+if(num1===104){
+  const w1=1200,w2=1500,N=10/hq,P=10/hq,K=10/hq,s1=10,sK=0.001,t1=3,ar=150,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-4"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1200,w2=1500,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=150;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1200,w2=1500,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//CELERY SEEDS
+
+if(num1===105){
+  const w1=1200,w2=1500,N=10/hq,P=10/hq,K=10/hq,s1=3,sK=0.001,t1=3,ar=120,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-4"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=150;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=180;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//POPPY SEEDS:
+
+if(num1===106){
+  const w1=1000,w2=1200,N=5/hq,P=10/hq,K=10/hq,s1=2,sK=0.001,t1=3,ar=100,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-4"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=800,w2=1000,ar=80;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1200,w2=1500,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1500,w2=1800,ar=150;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//AJWAIN SEEDS
+if(num1===107){
+  const w1=1200,w2=1500,N=10/hq,P=10/hq,K=10/hq,s1=4,sK=0.001,t1=3,ar=80,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-6"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=70;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-6"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-6"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-6"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+//BLACK CUMIN
+
+if(num1===108){
+  const w1=1200,w2=1500,N=10/hq,P=10/hq,K=10/hq,s1=7,sK=0.001,t1=3,ar=80,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-4"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=70;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+//DILL SEEDS
+if(num1===109){
+  const w1=1200,w2=1500,N=10/hq,P=10/hq,K=10/hq,s1=7,sK=0.001,t1=2,ar=80,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-3"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=70;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-3"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-3"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-3"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+//ANISE SEEDS
+if(num1===110){
+  const w1=1200,w2=1500,N=10/hq,P=10/hq,K=10/hq,s1=7,sK=0.001,t1=2,ar=80,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-3"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=70;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-3"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-3"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-3"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//CAPER
+if(num1===111){
+  const w1=800,w2=1000,N=5/hq,P=10/hq,K=10/hq,s1=7,sK=0.001,t1=4,ar=80,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-6"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=600,w2=800,ar=70;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-6"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1000,w2=1200,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-6"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=800,w2=1000,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-6"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//CUBEB PEPPER
+if(num1===112){
+  const w1=1200,w2=1500,N=5/hq,P=10/hq,K=10/hq,s1=6,sK=0.001,t1=3,ar=80,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-6"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=600,w2=800,ar=70;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-6"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1000,w2=1200,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-6"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=800,w2=1000,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-6"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//PARADISE
+
+if(num1===113){
+  const w1=1200,w2=1500,N=5/hq,P=10/hq,K=10/hq,s1=3,sK=0.001,t1=2,ar=60,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-3"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=1000,w2=1200,ar=50;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-3"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1500,w2=1800,ar=80;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-3"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=1800,w2=2000,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-3"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//JUNIPER BERRY
+
+if(num1===114){
+  const w1=800,w2=1200,N=5/hq,P=10/hq,K=10/hq,s1=2,sK=0.001,t1=5,ar=100,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-10"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=600,w2=800,ar=80;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-10"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1000,w2=1200,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-10"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=800,w2=1000,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-10"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//KOKUM
+if(num1===115){
+  const w1=800,w2=1200,N=10/hq,P=10/hq,K=10/hq,s1=7,sK=0.001,t1=6,ar=100,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-8"+" years";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=600,w2=800,ar=80;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-8"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=1000,w2=1200,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-8"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=800,w2=1000,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-8"+" years";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+//BISHOP’S WEED
+
+if(num1===116){
+  const w1=600,w2=800,N=5/hq,P=5/hq,K=5/hq,s1=3,sK=0.001,t1=3,ar=60,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-4"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=400,w2=600,ar=80;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=800,w2=1000,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=600,w2=800,ar=100;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-4"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+
+//GALANGAL
+
+if(num1===117){
+  const w1=800,w2=1000,N=8/hq,P=8/hq,K=8/hq,s1=3,sK=0.001,t1=8,ar=60,arA=0.000247;
+  if(num3==-2 || num3==-3  || num3==-8  || num3==-4){
+    document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+    document.getElementById('timetaken').value =t1+"-10"+" months";
+    document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+    document.getElementById('seed').value =   (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+    document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-1){
+  const w1=600,w2=800,ar=80;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-10"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else if(num3==-5 || num3==-7){
+  const w1=100,w2=1200,ar=120;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-10"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+else {
+  const w1=800,w2=1000,ar=80;
+  document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
+  document.getElementById('timetaken').value =t1+"-10"+" months";
+  document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
+  document.getElementById('seed').value =  (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
+  document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
+}
+}
+
+
+
 
 
     // Code to execute for Option 3
