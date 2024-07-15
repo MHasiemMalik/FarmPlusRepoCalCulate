@@ -3,7 +3,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!--meta name="viewport" content="width=device-width, initial-scale=0.1"-->
     <title>CALCULATIONS+</title>
+    <script src="https://kit.fontawesome.com/f25cce70b4.js" crossorigin="anonymous"></script> 
     <script src="calculations.js"></script>
     <style>
         h2,h4 {         
@@ -18,8 +20,17 @@
             flex-wrap:wrap;
             /* color: purple; */
         }
+        #ma {
+            display: flex;
+            float: none;
+            gap: 30px;
+            flex-direction:row; 
+            justify-content:center; 
+            flex-wrap:wrap;
+            /* color: purple; */
+        }
         body{
-	        background-image: url(TURMARIC.jpg)
+	        background-image: url(PICS/TURMARIC.jpg)
         }
         label{
             color:black;
@@ -48,6 +59,12 @@
                         0 0 100px green;
         
         }
+        #imgdiv:hover,#imgdiv1:hover{
+            box-shadow: 0 0 5px green,
+                        0 0 25px green,
+                        0 0 50px green,
+                        0 0 100px green;
+        }
         #su:hover{
             box-shadow: 0 0 5px black,
                         0 0 10px black;     
@@ -55,8 +72,28 @@
         
            #MAIN{
                  
-                 padding-top: 60px ;
+                 padding-top: 0px ;
 			}
+
+
+            #pics,#soilpics{
+               height: 250px;
+               width: 350px;
+           }
+
+           #imgdiv,#imgdiv1{
+               display: none;
+               border: 3px solid orange;;
+               height: 250px;
+               width: 350px;
+               margin-top: 5%;
+           }
+           
+           h3{
+            font-size: 25px;
+            display: none;
+            color: white;
+           }
             
         @media screen and (max-width: 450px){
             #Y,#X{
@@ -64,53 +101,87 @@
                  padding: 15px 5px 5px; 
 			}
 		}
+
+        @media (max-width: 460px) {
+            #pics,#soilpics{
+               height: 200px;
+               width: 250px;
+           }
+           #imgdiv,#imgdiv1{
+               height: 200px;
+               width: 250px;
+           }
+       }
+
+       option {
+        font-size: 15px; /* Change the font size as needed */
+    }
+
+    #sc1{
+        display: none;
+    }
+
+    select,.inpdt {
+            font-size: 14px;
+            padding: 4px;
+        }
+
     </style>
 </head>
 
 <body bgcolor="black"   style='background-repeat:no-repeat;background-position:center center; background-size:cover;  background-attachment:fixed;'>
 
-    <CENTER><div id="MAIN">
+
+    
+    
+    <CENTER> 
+
+
+
+        <CENTER>
+            <div id="ma">
+                <CENTER>    
+                    <div id="imgdiv">
+                      
+                      <img src="" alt="" id="pics">
+                    </div>
+                    <h3 id="croph3">Apple</h3>
+                  </CENTER>
         
+                  <CENTER>
+                
+                    <div id="imgdiv1">
+                      
+                      <img src="" alt="" id="soilpics">
+                    </div>
+                    <h3 id="soil3">Black Soil</h3>
+                </CENTER>
+            </div>        
+        </CENTER>
+
+        
+            
+    <div id="MAIN">   
         <div ID="d"> 
-        <h2>Calculations / లెక్కించు:</h2>
+        <h2><i class="fa-solid fa-hand-holding-droplet"></i> Calculations / లెక్కించు:</h2>
         <div id="X">
 
             <label for="country">Crop name :</label>
-            <select id="cropdata" >
-                <option value="Abaca (Manila Hemp)">Abaca (Manila Hemp)/అబాకా</option>
-                <option value="Agave">Agave/కిత్తలి</option>
-                <option value="Ajwain Seeds">Ajwain Seeds/అజ్వైన్ విత్తనాలు</option>
-                <option value="Allspice">Allspice</option>
-                <option value="Aloe Vera">Aloe Vera</option>
-                <option value="Anise Seeds">Anise Seeds</option>
-                <option value="Apple">Apple</option>
-                <option value="Apricot">Apricot</option>
-                <option value="Areca Nut">Areca nut (Betel Nut)</option>
-                <option value="Aromatic Plants">Aromatic Plants (Lemongrass,etc)</option>
-                <option value="Artichoke">Artichoke</option>
-                <option value="Asafoetida (Hing)">Asafoetida(Hing)</option>
-                <option value="Ash Gourd(Petha)">Ash Gourd(Petha)</option>
-                <option value="Asparagus">Asparagus</option>
-                <option value="Aster">Aster</option>
-                <option value="Avocado">Avocado</option>
-                <option value="Azalea">Azalea</option>
-                <option value="Bamboo">Bamboo</option>
-                <option value="Banana">Banana</option>
+            <select id="cropdata" onchange="displaySelectedImage()">
+                <option value="none">none</option>
                 <option value="12">Rose</option>
-                <option value="50">Tomato</option>
-                <option value="18">Potato </option>
                 <option value="20">Jasmine</option>
                 <option value="25">Marigold</option>
                 <option value="7">Orchids</option>
-                <option value="10">lily</option>
+                <option value="10">Lily</option>
                 <option value="51">Chrysanthemum</option>
                 <option value="69">Hibiscus</option>
-                <option value="30">Tulip</option>
+                <option value="8">Tulip</option>
                 <option value="55">Daffodils</option>
-                <option value="70">Iris</option>
+                <option value="9">Iris</option>
                 <option value="30">Daisies</option>
                 <option value="31">Aster</option>
-                <option value="40">Gladiolus</option>
+                <option value="11">Gladiolus</option>
                 <option value="34">Petunia</option>
                 <option value="32">Zinnia</option>
                 <option value="33">Pansy</option>
@@ -129,7 +200,7 @@
                 <option value="47">apple</option>
                 <option value="5">banana</option>
                 <option value="52">Berries</option>
-                <option value="53">cashwe apple</option>
+                <option value="53">cashew</option>
                 <option value="54">CHERRY</option>
                 <option value="57">COCONUT</option>
                 <option value="58">CUSTARD APPLE</option>
@@ -138,7 +209,7 @@
                 <option value="62">GUAVA</option>
                 <option value="63">JACKFRUIT</option>
                 <option value="64">JAVA PLUM</option>
-                <option value="66">Litchi</option>
+                <option value="66">Lychee</option>
                 <option value="67">Mango</option>
                 <option value="68">Mulberry</option>
                 <option value="70">Olive</option>
@@ -189,68 +260,58 @@
                 <option value="115">KOKUM</option>
                 <option value="116">BISHOP’S WEED</option>
                 <option value="117">GALANGAL</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
-                <option value="Abaca">Abaca</option>
+                <option value="50">Tomato</option>
+                <option value="18">Potato </option>
+                
+
+                <option value="119">PUMPKIN</option>
+                
+                <option value="120">beetroot</option>
+                <option value="121">cucumber</option>
+                <option value="122">pea</option>
+                <option value="123">radish</option>
+                <option value="124">beans</option>
+                <option value="125">sweet potato</option>
+                <option value="126">drumstick</option>
+                <option value="127">bitter gourd</option>
+                <option value="128">capsicum</option>
+                <option value="129">red chilli</option>
+
+                <option value="131">garlic</option>
+
+                <option value="132">ONION</option>
+                <option value="133">carrot</option>
+            
+                <option value="134">cauliflower</option> 
+                <option value="135">cabbage</option>
+
+                <option value="136">spinach</option>
+                <option value="137">bottle gourd</option>
+                <option value="138">ridge gourd</option>
+                <option value="139">corn</option>
+                <option value="140">broccoli</option>
+                <option value="141">turnip</option>
+                <option value="142">brinjal</option>
+                <option value="143">ladies finger (okra)</option>
+                 
+                <!--Add this ok !!-->
+                <option value="130">green chilli</option> -->
+                <option value="144">yam</option>    -->    
+                <option value="145">colocasia</option> -->
+                <option value="146">chayote squash</option>  -->
+                <option value="147">tindora</option>        -->
+                <option value="148">cluster beans</option>  -->
+                <option value="149">ash gourd</option>  -->
+                <option value="150">SNAKE GOURD</option> -->     
+
+
+                
             </select><br><br>
              <label >Quantity(in quintals) :</label>
-            <input type="number" id="area" placeholder="Enter no. of quintals" required><br><br>
+            <input class="inpdt"  type="number" id="area" placeholder="Enter no. of quintals" required><br><br>
             <label >Soil Type :</label>
-            <select id="soil" >
+            <select id="soil" onchange="displaySelectedSoilImage()">
+                <option value="none">none</option>
                 <option value="-1">Alluvial Soil/ ఒండ్రు నేల</option>
                 <option value="-2">Black Soil/ నల్ల నేల</option>
                 <option value="-3">Red/ ఎరుపు నేల</option>  
@@ -261,14 +322,13 @@
                 <option value="-8">Forest soil/ అటవీ నేల</option>
             </select>
             <p>
-                <center><input type="image" id="su" src="SUBMITB.jpg" alt="Submit" width="90" height="32" onclick="calculate()"></center>
+                <center><input type="image" id="su" src="AIS PICS/SUBMITB.jpg" alt="Submit" width="90" height="32" onclick="calculate()"></center>
             </p>
         </div>
        </div>
 
-
        <div id="F">
-        <h2>Result / ఫలితం :</h2>
+        <h2><i id="sc"  class="fa-solid fa-scale-balanced"></i> <i id="sc1" class="fa-solid fa-scale-balanced fa-shake"></i> Result / ఫలితం :</h2>
             <div id="Y">
                 <label >Water Required :</label>
                 <!--span  id="wateroutput"></span>
@@ -276,29 +336,378 @@
                     <span  id="fert" ></span>
                     <span  id="seed" ></span>
                     <span  id="cost" ></span-->
-                <input type="text" id="wateroutput" readonly><br><br>
+                <input class="inpdt" type="text" id="wateroutput" readonly><br><br>
                 <label >Time Taken :</label>
-                <input type="text" id="timetaken" readonly>
+                <input class="inpdt" type="text" id="timetaken" readonly>
                 <br><br>
                 <label >Fertilizer Used : </label>
-                <input type="text" id="fert"  readonly>
+                <input class="inpdt" type="text" id="fert"  readonly>
                 <br>
                 <br> <label >Seeds Used  : </label>
-                <input type="text" id="seed" readonly>
+                <input class="inpdt" type="text" id="seed" readonly>
                 <br> 
 
                 <br> <label>Total Area Used:</label>
-                <input type="text" id="cost" readonly>
+                <input class="inpdt" type="text" id="cost" readonly>
                 <br>    
                         
                 <p>
-                <center><input type="image" id="su" src="RESETB.jpg" alt="reset" width="90" height="32" onclick="reset()"></center>
+                <center><input type="image" id="su" src="AIS PICS/RESETB.jpg" alt="reset" width="90" height="32" onclick="reset()"></center>
                 </p>
             </div>
        </div>
-       
-    </div></>cente><br><br><br>
-<center><h4>NOTE: 1 quintal = 100kg , 1kg = 1000grams/0.01 quintal, 10 quintals = 1000 kg/1 ton ,0.5 quintal = 50 kg , N:P:K= Nitrogen:Potassium:Phosphorus (Urea) <br> <br>The Above Data Is Approximation And May Slightly Differ On Seasonal Factors</h4></CENTER>
+    </div></center><br><br><br>
+    
+<center><h4 style="background-color: rgba(0, 0, 0, 0.49);width: 60%;">NOTE:<br><i class="fa-solid fa-right-long"></i> 1 quintal = 100kg &nbsp; || &nbsp; <i class="fa-solid fa-right-long"></i> 1kg = 1000grams/0.01 quintal <br><i class="fa-solid fa-right-long"></i> 10 quintals = 1000 kg/1 ton &nbsp;|| &nbsp; <i class="fa-solid fa-right-long"></i> 0.5 quintal = 50 kg <br><i class="fa-solid fa-right-long"></i> N:P:K= Nitrogen : Potassium : Phosphorus (Urea) <br> <br>The Above Data Is Approximation And May Slightly Differ On Seasonal Factors</h4></CENTER>
+
+
+
+    <script>
+        function displaySelectedSoilImage() {
+            var select = document.getElementById("soil");
+            var image = document.getElementById("soilpics");
+            var divtag = document.getElementById("imgdiv1");
+            var h3 = document.getElementById("soil3");
+
+           // var main=document.getElementById("MAIN");
+
+            var selectedValue = select.value;
+            var imageUrls = {
+                   "-1":"PICS/alluvial soil.jpg",
+                   "-2":"PICS/black soil.jpg",
+                   "-3":"PICS/red soil.jpg",
+                   "-4":"PICS/leteraite soil.jpg",
+                   "-5":"PICS/mountain soil.jpg",
+                   "-6":"PICS/arid soil.jpg  ",
+                   "-7":"PICS/yellow soil.jpg  ",
+                   "-8":"PICS/Forest soil.jpg  "
+                };
+
+                var h3Text = {
+                   "-1":"Alluvial soil",
+                   "-2":"Black soil",
+                   "-3":"Red soil",
+                   "-4":"Leteraite soil",
+                   "-5":"Mountain soil",
+                   "-6":"Arid,Desert soil",
+                   "-7":"Yellow soil",
+                   "-8":"Forest soil"
+                };
+                image.src = imageUrls[selectedValue];
+                h3.textContent = h3Text[selectedValue];
+
+     if(selectedValue === "none") {
+        imgdiv1.style.display = "none";
+        h3.style.display = "none";
+      } else {
+        imgdiv1.style.display = "block";
+        h3.style.display = "block";
+       // main.style.display =""
+
+      }
+
+                
+                  
+       }
+
+
+
+        function displaySelectedImage() {
+        
+        var select = document.getElementById("cropdata");
+        
+        var image = document.getElementById("pics");
+        
+        var h3 = document.getElementById("croph3");
+        
+        var divtag = document.getElementById("imgdiv");
+        
+        
+      var selectedValue = select.value;
+      // Define an object with image URLs corresponding to each option
+      var imageUrls = {
+        //"none": "",
+                   "12":"PICS/rose1.jpg",
+                   "20":"PICS/jasmine1.jpg",
+                   "25":"PICS/marigold1.jpg",
+                    "7":"PICS/orchidstype1.jpg",
+                   "10":"PICS/lily.jpg",
+                  "51" :"PICS/CHRYSANTHEMUM1.jpg  ",
+                  "69" :"PICS/HIBISCUS crop.jpg  ",
+                  "8" :"PICS/flowergrowth/tulip2.jpg  ",
+                  "55" :"PICS/flowergrowth/Daffodils1.jpg  ",
+                  "9" :"PICS/flowergrowth/Iris.jpg  ",
+                  "30" :"PICS/flowergrowth/Daisies.jpg  ",
+                  "31" :"PICS/ASTER crop.jpg  ",
+                  "11" :"PICS/Gladiolus.jpg  ",
+                  "34" :"PICS/Petunia.jpg  ",
+                  "32" :"PICS/Zinnia.jpg  ",
+                  "33" :"PICS/flowergrowth/Pansy.jpg  ",
+                  "35" :"PICS/COSMO .jpg  ",
+                  "36" :"PICS/DEHLIAS2.jpg  ",
+                  "37" :"PICS/Lily of the Valley2.jpg  ",
+                  "38" :"PICS/sweet pea2.jpg  ",
+                  "39" :"PICS/hydrangea.jpg  ",
+                  "40" :"PICS/BOUGAINVILLEA crops.jpg  ",
+                  "41" :"PICS/morning glory.jpg  ",
+                  "42" :"PICS/geranium.jpg  ",
+                  "43" :"PICS/lavender1.jpg  ",
+                  "44" :"PICS/bluebell2.jpg  ",
+                  "45" :"PICS/flowergrowth/Camellia.jpg",
+                  "46" :"PICS/Azalea.jpg",
+                  "47" :"PICS/applebyme.jpg",
+                  "5" :"PICS/banana.jpg  ",
+                  "52" :"PICS/blueberry.jpg",
+                  "53" :"PICS/cashew.jpg  ",
+                  "54" :"PICS/cherry.jpg  ",
+                  "57" :"PICS/coconut.jpg  ",
+                  "58" :"PICS/custard.jpg  ",
+                  "59" :"PICS/datepalmfarmer.jpg  ",
+                  "61" :"PICS/grapes.jpg  ",
+                  "62" :"PICS/guava.jpg  ",
+                  "63" :"PICS/jackfruit.jpg  ",
+                  "64" :"PICS/JAVA PLUM.jpg  ",
+                  "66" :"PICS/lychee10.jpg  ",
+                  "67" :"PICS/mango5.jpg  ",
+                  "68" :"PICS/mulberry.jpg  ",
+                  "70" :"PICS/olive.jpg  ",
+                  "71" :"PICS/papaya.jpg  ",
+                  "72" :"PICS/passion Fruit.jpg X  ", 
+                  "73" :"PICS/Peach110.jpg  ",
+                  "74" :"PICS/Persimmon.jpg  X  ",
+                  "75" :"PICS/pine.jpg  ",
+                  "76" :"PICS/plum110.jpg  ",
+                  "77" :"PICS/Pomegranate.jpg  ",
+                  "78" :"PICS/Rambutan.jpg  X ",
+                  "79" :"PICS/Sapota.jpg  ",
+                  "80" :"PICS/Star fruit.jpg  X ",
+                  "81" :"PICS/Tamarind.jpg  ",
+                  "82" :"PICS/Watermelon.jpg",
+                  "83" :"PICS/blackpepper.jpg",
+                  "84" :"PICS/cardamom.jpg",
+                  "85" :"PICS/cinnamon.jpg",
+                  "86" :"PICS/cloves.jpg",
+                  "87" :"PICS/coriander1.jpg",
+                  "88" :"PICS/CUMIN1.jpg",
+                  "89" :"PICS/fennel1.jpg",
+                  "90" :"PICS/fen2.jpg",
+                  "91" :"PICS/gin.jpg",
+                  "92" :"PICS/nutmeg.jpg",
+                  "93" :"PICS/TURMARIC1.jpg",
+                  "94" :"PICS/star.jpg",
+                  "95" :"PICS/bay.jpg",
+                  "96" :"PICS/caromseeds1.jpg",
+                  "97" :"PICS/asafoetida1.jpg",
+                  "98" :"PICS/mustard seeds.jpg",
+                  "99" :"PICS/saf3.jpg",
+                  "100" :"PICS/TAMARIND.jpg",
+                  "101" :"PICS/curryleaves1.jpg",
+                  "102" :"PICS/mace.jpg",
+                  "103" :"PICS/longpepper1.jpg",
+                  "104" :"PICS/WHITE PEPPER.jpg     X",
+                  "105" :"PICS/celeryseeds1.jpg",
+                  "106" :"PICS/poppy3.jpg",
+                  "107" :"PICS/ajwainseeds.jpg",
+                  "108" :"PICS/KL2.jpg",
+                  "109" :"PICS/dillseeds.jpg",
+                  "110" :"PICS/ani3.jpg",
+                  "111" :"PICS/caper1.jpg",
+                  "112" :"PICS/cubebpepper.jpg",
+                  "113" :"PICS/PARADISE  .jpg    X",
+                  "114" :"PICS/juniperberry1.jpg",
+                  "115" :"PICS/kokum.jpg",
+                  "116" :"PICS/bishopsweed.jpg",
+                  "117" :"PICS/galangal1.jpg",
+                  "50" :"PICS/tomato2.jpg",
+                  "18" :"PICS/potato3.jpg",
+                  "133":"PICS/carrot3.jpg",
+                 
+                 "119":"PICS/pumpkin1.jpg",
+                 "120":"PICS/beetroot1.jpg",
+                 "121":"PICS/cucumber3.jpg",
+                 "122":"PICS/peas3.jpg",
+                 "123":"PICS/radish3.jpg",
+                 "124":"PICS/beans3.jpg",
+                 "125":"PICS/fwdvegetables/sweetpotato3.jpeg",
+                 "126":"PICS/drumstick1.jpg",
+                 "127":"PICS/bitter gourd3.jpg",
+                 "128":"PICS/fwdvegetables/capsicum1.jpg",
+                 "129":"PICS/red chilli3.jpg",
+                 "130":"PICS/green chilli3.jpg",
+                 "131":"PICS/garlic3.jpg",
+                 "132":"PICS/onion3.jpg",
+                 "134":"PICS/cauliflower3.jpg",
+                 "135":"PICS/cabbage3.jpg",
+                 "136":"PICS/spinach3.jpg",
+                 "137":"PICS/bottle gourd3.jpg",
+                 "138":"PICS/ridge gourd3.jpg",
+                 "139":"PICS/fwdvegetables/corn3.jpg",
+                 "140":"PICS/broccoli3.jpg",
+                 "141":"PICS/turnip1.jpg",
+                 "142":"PICS/fwdvegetables/brinjal1.jpg",
+                 "143":"PICS/fwdvegetables/ladiesfinger1.jpg",
+
+                 "144":"PICS/yam3.jpg",
+                 "145":"PICS/colocasia3.jpg",
+                 "146":"PICS/chayote squash1.jpg",
+                 "147":"PICS/tindora1.jpg",
+                 "147":"PICS/cluster beans3.jpg",
+                 "149":"PICS/ash gourd3.jpg",
+                 "150":"PICS/fwdvegetables/snake gourd3.jpg",           
+             
+      };
+
+      var h3Text = {
+        //"none": "",
+                   "12":"Rose",
+                   "20":"Jasmine",
+                   "25":"Marigold",
+                    "7":"Orchids",
+                   "10":"Lily",
+                  "51" :"Chrysanthemum  ",
+                  "69" :"Hibiscus  ",
+                  "8" :"Tulip  ",
+                  "55" :"Daffodils  ",
+                  "9" :"Iris  ",
+                  "30" :"Daisies  ",
+                  "31" :"Aster  ",
+                  "11" :"Gladiolus  ",
+                  "34" :"Petunia  ",
+                  "32" :"Zinnia  ",
+                  "33" :"Pansy  ",
+                  "35" :"Cosmos  ",
+                  "36" :"Dahlia  ",
+                  "37" :"Lily of the Valley  ",
+                  "38" :"Sweet Pea  ",
+                  "39" :"Hydrangea  ",
+                  "40" :"Bougainvillea  ",
+                  "41" :"Morning Glory  ",
+                  "42" :"Geranium  ",
+                  "43" :"Lavender  ",
+                  "44" :"Bluebell  ",
+                  "45" :"Camellia  ",
+                  "46" :"Azalea  ",
+                  "47" :"apple  ",
+                  "5" :"banana  ",
+                  "52" :"Berries  ",
+                  "53" :"cashwe apple  ",
+                  "54" :"CHERRY  ",
+                  "57" :"COCONUT  ",
+                  "58" :"CUSTARD APPLE  ",
+                  "59" :"DATES  ",
+                  "61" :"GRAPES  ",
+                  "62" :"GUAVA  ",
+                  "63" :"JACKFRUIT  ",
+                  "64" :"JAVA PLUM  ",
+                  "66" :"Lychee  ",
+                  "67" :"Mango  ",
+                  "68" :"Mulberry  ",
+                  "70" :"Olive  ",
+                  "71" :"Papaya  ",
+                  "72" :"Passion Fruit  ",
+                  "73" :"Peach  ",
+                  "74" :"Persimmon  ",
+                  "75" :"Pineapple  ",
+                  "76" :"Plum  ",
+                  "77" :"Pomegranate  ",
+                  "78" :"Rambutan  ",
+                  "79" :"Sapota  ",
+                  "80" :"Star fruit  ",
+                  "81" :"Tamarind  ",
+                  "82" :"Watermelon  ",
+                  "83" :"Peper  ",
+                  "84" :"CARDOMON  ",
+                  "85" :"CINNAMON  ",
+                  "86" :"CLOVES  ",
+                  "87" :"CORIANDER  ",
+                  "88" :"CUMIN  ",
+                  "89" :"FENNEL  ",
+                  "90" :"FENNUGREEK  ",
+                  "91" :"GINGER  ",
+                  "92" :"NUTMEG  ",
+                  "93" :"TURMERIC  ",
+                  "94" :"STAR ANISE  ",
+                  "95" :"BAY LEAF  ",
+                  "96" :"CAROM SEEDS  ",
+                  "97" :"ASAFOETIDA  ",
+                  "98" :"MUSTARD SEEDS  ",
+                  "99" :"SAFFRON  ",
+                  "100" :"TAMARIND  ",
+                  "101" :"CURRY LEAVES  ",
+                  "102" :"MACE  ",
+                  "103" :"LONG PEPPER  ",
+                  "104" :"WHITE PEPPER  ",
+                  "105" :"CELERY SEEDS  ",
+                  "106" :"POPPY SEEDS  ",
+                  "107" :"AJWAIN SEEDS  ",
+                  "108" :"BLACK CUMIN  ",
+                  "109" :"DILL SEEDS  ",
+                  "110" :"ANISE SEEDS  ",
+                  "111" :"CAPER  ",
+                  "112" :"CUBEB PEPPER  ",
+                  "113" :"PARADISE  ",
+                  "114" :"JUNIPER BERRY  ",
+                  "115" :"KOKUM  ",
+                  "116" :"BISHOP’S WEED  ",
+                  "117" :"GALANGAL  ",
+                  "50" :"Tomato  ",
+                  "18" :"Potato   ",
+                  "119":"pumpkin1",
+                
+                 "120":"beetroot1",
+                 "121":"cucumber3",
+                 "122":"peas3",
+                 "123":"radish3",
+                 "124":"beans3",
+                 "125":"sweetpotato3.jpeg",
+                 "126":"drumstick1",
+                 "127":"bitter gourd3",
+                 "128":"capsicum1",
+                 "129":"red chilli3",
+                 "130":"green chilli3",
+                 "131":"garlic3",
+                 "132":"onion3",
+                 "133":"carrot3",
+                 "134":"cauliflower3",
+                 "135":"cabbage3",
+                 "136":"spinach3",
+                 "137":"bottle gourd3",
+                 "138":"ridge gourd3",
+                 "139":"corn3",
+                 "140":"broccoli3",
+                 "141":"turnip1",
+                 "142":"brinjal1",
+                 "143":"ladiesfinger1",
+
+
+                 "144":"yam3",
+                 "145":"colocasia3",
+                 "146":"chayote squash1",
+                 "147":"tindora1",
+                 "148":"cluster beans3",
+                 "149":"ash gourd3",
+                 "150":"snake gourd3"
+
+
+        // Add h3 text for other options as needed
+      };
+
+      // Set the image source based on the selected value
+
+
+      image.src = imageUrls[selectedValue];
+      h3.textContent = h3Text[selectedValue];
+
+      if(selectedValue === "none") {
+        imgdiv.style.display = "none";
+        h3.style.display = "none";
+      } else {
+        imgdiv.style.display = "block";
+        h3.style.display = "block";
+      }
+
+    }
+      </script>
 </body>
 </html>
 <!--form {
