@@ -124,13 +124,50 @@
     select,.inpdt {
             font-size: 14px;
             padding: 4px;
+        }#google_translate_element_container {
+            position: fixed;
+            bottom: 30px;
+            right: 10px;
+            z-index: 9999;
+            transition: box-shadow 0.3s ease; /* Add transition for a smoother effect */
+        }
+
+        /* Style the Google Translate Element */
+        #google_translate_element {
+            border: 1px solid rgba(255, 174, 0); /* Cyan border color */
+            padding: 10px;
+            background-color: #f0f8ff; /* AliceBlue background color */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 174, 0); /* Initial box-shadow */
+        }
+
+        /* Add box-shadow when hovering over the container */
+        #google_translate_element_container:hover {
+            box-shadow: 0 0 5px rgb(255, 174, 0),
+                        0 0 25px rgb(255, 174, 0),
+                        0 0 50px rgb(255, 174, 0);
+        }
+        @media (max-width: 460px) {
+            #imgX{
+                height: 200px;
+                width: 300px;
+            }
+            
         }
 
     </style>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement({ pageLanguage: 'tel', layout: google.translate.TranslateElement.InlineLayout }, 'google_translate_element');
+      }
+    </script>
 </head>
 
 <body bgcolor="black"   style='background-repeat:no-repeat;background-position:center center; background-size:cover;  background-attachment:fixed;'>
-
+    <div id="google_translate_element_container">
+        <div id="google_translate_element"></div>
+    </div>
 
     
     
@@ -163,146 +200,156 @@
             
     <div id="MAIN">   
         <div ID="d"> 
-        <h2><i class="fa-solid fa-hand-holding-droplet"></i> Calculations / లెక్కించు:</h2>
+        <h2><i class="fa-solid fa-hand-holding-droplet"></i> Resource Forecast :</h2>
         <div id="X">
 
             <label for="country">Crop name :</label>
             <select id="cropdata" onchange="displaySelectedImage()">
-                <option value="none">none</option>
-                <option value="12">Rose</option>
-                <option value="20">Jasmine</option>
-                <option value="25">Marigold</option>
-                <option value="7">Orchids</option>
-                <option value="10">Lily</option>
-                <option value="51">Chrysanthemum</option>
-                <option value="69">Hibiscus</option>
-                <option value="8">Tulip</option>
-                <option value="55">Daffodils</option>
-                <option value="9">Iris</option>
-                <option value="30">Daisies</option>
-                <option value="31">Aster</option>
-                <option value="11">Gladiolus</option>
-                <option value="34">Petunia</option>
-                <option value="32">Zinnia</option>
-                <option value="33">Pansy</option>
-                <option value="35">Cosmos</option>
-                <option value="36">Dahlia</option>
-                <option value="37">Lily of the Valley</option>
-                <option value="38">Sweet Pea</option>
-                <option value="39">Hydrangea</option>
-                <option value="40">Bougainvillea</option>
-                <option value="41">Morning Glory</option>
-                <option value="42">Geranium</option>
-                <option value="43">Lavender</option>
-                <option value="44">Bluebell</option>
-                <option value="45">Camellia</option>
-                <option value="46">Azalea</option>
-                <option value="47">apple</option>
-                <option value="5">banana</option>
-                <option value="52">Berries</option>
-                <option value="53">cashew</option>
-                <option value="54">CHERRY</option>
-                <option value="57">COCONUT</option>
-                <option value="58">CUSTARD APPLE</option>
-                <option value="59">DATES</option>
-                <option value="61">GRAPES</option>
-                <option value="62">GUAVA</option>
-                <option value="63">JACKFRUIT</option>
-                <option value="64">JAVA PLUM</option>
-                <option value="66">Lychee</option>
-                <option value="67">Mango</option>
-                <option value="68">Mulberry</option>
-                <option value="70">Olive</option>
-                <option value="71">Papaya</option>
-                <option value="72">Passion Fruit</option>
-                <option value="73">Peach</option>
-                <option value="74">Persimmon</option>
-                <option value="75">Pineapple</option>
-                <option value="76">Plum</option>
-                <option value="77">Pomegranate</option>
-                <option value="78">Rambutan</option>
-                <option value="79">Sapota</option>
-                <option value="80">Star fruit</option>
-                <option value="81">Tamarind</option>
-                <option value="82">Watermelon</option>
-                <option value="83">Peper</option>
-                <option value="84">CARDOMON</option>
-                <option value="85">CINNAMON</option>
-                <option value="86">CLOVES</option>
-                <option value="87">CORIANDER</option>
-                <option value="88">CUMIN</option>
-                <option value="89">FENNEL</option>
-                <option value="90">FENNUGREEK</option>
-                <option value="91">GINGER</option>
-                <option value="92">NUTMEG</option>
-                <option value="93">TURMERIC</option>
-                <option value="94">STAR ANISE</option>
-                <option value="95">BAY LEAF</option>
-                <option value="96">CAROM SEEDS</option>
-                <option value="97">ASAFOETIDA</option>
-                <option value="98">MUSTARD SEEDS</option>
-                <option value="99">SAFFRON</option>
-                <option value="100">TAMARIND</option>
-                <option value="101">CURRY LEAVES</option>
-                <option value="102">MACE</option>
-                <option value="103">LONG PEPPER</option>
-                <option value="104">WHITE PEPPER</option>
-                <option value="105">CELERY SEEDS</option>
-                <option value="106">POPPY SEEDS</option>
-                <option value="107">AJWAIN SEEDS</option>
-                <option value="108">BLACK CUMIN</option>
-                <option value="109">DILL SEEDS</option>
-                <option value="110">ANISE SEEDS</option>
-                <option value="111">CAPER</option>
-                <option value="112">CUBEB PEPPER</option>
-                <option value="113">PARADISE</option>
-                <option value="114">JUNIPER BERRY</option>
-                <option value="115">KOKUM</option>
-                <option value="116">BISHOP’S WEED</option>
-                <option value="117">GALANGAL</option>
-                <option value="50">Tomato</option>
-                <option value="18">Potato </option>
-                
-
-                <option value="119">PUMPKIN</option>
-                
-                <option value="120">beetroot</option>
-                <option value="121">cucumber</option>
-                <option value="122">pea</option>
-                <option value="123">radish</option>
-                <option value="124">beans</option>
-                <option value="125">sweet potato</option>
-                <option value="126">drumstick</option>
-                <option value="127">bitter gourd</option>
-                <option value="128">capsicum</option>
-                <option value="129">red chilli</option>
-
-                <option value="131">garlic</option>
-
-                <option value="132">ONION</option>
-                <option value="133">carrot</option>
-            
-                <option value="134">cauliflower</option> 
-                <option value="135">cabbage</option>
-
-                <option value="136">spinach</option>
-                <option value="137">bottle gourd</option>
-                <option value="138">ridge gourd</option>
-                <option value="139">corn</option>
-                <option value="140">broccoli</option>
-                <option value="141">turnip</option>
-                <option value="142">brinjal</option>
-                <option value="143">ladies finger (okra)</option>
-                 
-                <!--Add this ok !!-->
-                <option value="130">green chilli</option> -->
-                <option value="144">yam</option>    -->    
-                <option value="145">colocasia</option> -->
-                <option value="146">chayote squash</option>  -->
-                <option value="147">tindora</option>        -->
-                <option value="148">cluster beans</option>  -->
-                <option value="149">ash gourd</option>  -->
-                <option value="150">SNAKE GOURD</option> -->     
+                <option value="none">NONE</option>
+<option value="12">ROSE</option>
+<option value="20">JASMINE</option>
+<option value="25">MARIGOLD</option>
+<option value="7">ORCHIDS</option>
+<option value="10">LILY</option>
+<option value="51">CHRYSANTHEMUM</option>
+<option value="69">HIBISCUS</option>
+<option value="8">TULIP</option>
+<option value="55">DAFFODILS</option>
+<option value="9">IRIS</option>
+<option value="30">DAISIES</option>
+<option value="31">ASTER</option>
+<option value="11">GLADIOLUS</option>
+<option value="34">PETUNIA</option>
+<option value="32">ZINNIA</option>
+<option value="33">PANSY</option>
+<option value="35">COSMOS</option>
+<option value="36">DAHLIA</option>
+<option value="37">LILY OF THE VALLEY</option>
+<option value="38">SWEET PEA</option>
+<option value="39">HYDRANGEA</option>
+<option value="40">BOUGAINVILLEA</option>
+<option value="41">MORNING GLORY</option>
+<option value="42">GERANIUM</option>
+<option value="43">LAVENDER</option>
+<option value="44">BLUEBELL</option>
+<option value="45">CAMELLIA</option>
+<option value="46">AZALEA</option>
+<option value="47">APPLE</option>
+<option value="5">BANANA</option>
+<option value="52">BERRIES</option>
+<option value="53">CASHEW</option>
+<option value="54">CHERRY</option>
+<option value="57">COCONUT</option>
+<option value="58">CUSTARD APPLE</option>
+<option value="59">DATES</option>
+<option value="61">GRAPES</option>
+<option value="62">GUAVA</option>
+<option value="63">JACKFRUIT</option>
+<option value="64">JAVA PLUM</option>
+<option value="66">LYCHEE</option>
+<option value="67">MANGO</option>
+<option value="68">MULBERRY</option>
+<option value="70">OLIVE</option>
+<option value="71">PAPAYA</option>
+<option value="72">PASSION FRUIT</option>
+<option value="73">PEACH</option>
+<option value="74">PERSIMMON</option>
+<option value="75">PINEAPPLE</option>
+<option value="76">PLUM</option>
+<option value="77">POMEGRANATE</option>
+<option value="78">RAMBUTAN</option>
+<option value="79">SAPOTA</option>
+<option value="80">STAR FRUIT</option>
+<option value="81">TAMARIND</option>
+<option value="82">WATERMELON</option>
+<option value="83">PEPPER</option>
+<option value="84">CARDOMON</option>
+<option value="85">CINNAMON</option>
+<option value="86">CLOVES</option>
+<option value="87">CORIANDER</option>
+<option value="88">CUMIN</option>
+<option value="89">FENNEL</option>
+<option value="90">FENNUGREEK</option>
+<option value="91">GINGER</option>
+<option value="92">NUTMEG</option>
+<option value="93">TURMERIC</option>
+<option value="94">STAR ANISE</option>
+<option value="95">BAY LEAF</option>
+<option value="96">CAROM SEEDS</option>
+<option value="97">ASAFOETIDA</option>
+<option value="98">MUSTARD SEEDS</option>
+<option value="99">SAFFRON</option>
+<option value="100">TAMARIND</option>
+<option value="101">CURRY LEAVES</option>
+<option value="102">MACE</option>
+<option value="103">LONG PEPPER</option>
+<option value="104">WHITE PEPPER</option>
+<option value="105">CELERY SEEDS</option>
+<option value="106">POPPY SEEDS</option>
+<option value="107">AJWAIN SEEDS</option>
+<option value="108">BLACK CUMIN</option>
+<option value="109">DILL SEEDS</option>
+<option value="110">ANISE SEEDS</option>
+<option value="111">CAPER</option>
+<option value="112">CUBEB PEPPER</option>
+<option value="113">PARADISE</option>
+<option value="114">JUNIPER BERRY</option>
+<option value="115">KOKUM</option>
+<option value="116">BISHOP’S WEED</option>
+<option value="117">GALANGAL</option>
+<option value="50">TOMATO</option>
+<option value="18">POTATO</option>
+<option value="119">PUMPKIN</option>
+<option value="120">BEETROOT</option>
+<option value="121">CUCUMBER</option>
+<option value="122">PEA</option>
+<option value="123">RADISH</option>
+<option value="124">BEANS</option>
+<option value="125">SWEET POTATO</option>
+<option value="126">DRUMSTICK</option>
+<option value="127">BITTER GOURD</option>
+<option value="128">CAPSICUM</option>
+<option value="129">RED CHILLI</option>
+<option value="131">GARLIC</option>
+<option value="132">ONION</option>
+<option value="133">CARROT</option>
+<option value="134">CAULIFLOWER</option>
+<option value="135">CABBAGE</option>
+<option value="136">SPINACH</option>
+<option value="137">BOTTLE GOURD</option>
+<option value="138">RIDGE GOURD</option>
+<option value="139">CORN</option>
+<option value="140">BROCCOLI</option>
+<option value="141">TURNIP</option>
+<option value="142">BRINJAL</option>
+<option value="143">LADIES FINGER (OKRA)</option>
+<option value="144">COTTON</option>
+<option value="145">SUGARCANE</option>
+<option value="146">TEA</option>
+<option value="147">COFFEE</option>
+<option value="148">TOBACCO</option>
+<option value="149">JUTE</option>
+<option value="150">RUBBER</option>
+<option value="151">SUNFLOWER</option>
+<option value="152">AERACANUT</option>
+<option value="153">VANILLA</option>
+<option value="154">KENAF</option>
+<option value="155">FLAXSEEDS</option>
+<option value="156">TAPIOCA</option>
+<option value="157">COCOA</option>
+<option value="158">BETEL LEAF</option>
+<option value="159">GUAR</option>
+<option value="161">ALOEVERA</option>
+<option value="162">MUNGBEAN</option>
+<option value="163">URADBEAN</option>
+<option value="164">BENGALGRAM</option>
+<option value="165">RAGI</option>
+<option value="166">BAJRA</option>
+<option value="167">BARLEY</option>
+<option value="168">RICE</option>
+<option value="169">WHEAT</option>
+<option value="170">GROUNDNUT</option>
+<option value="171">SESAME</option>
 
 
                 
@@ -311,15 +358,15 @@
             <input class="inpdt"  type="number" id="area" placeholder="Enter no. of quintals" required><br><br>
             <label >Soil Type :</label>
             <select id="soil" onchange="displaySelectedSoilImage()">
-                <option value="none">none</option>
-                <option value="-1">Alluvial Soil/ ఒండ్రు నేల</option>
-                <option value="-2">Black Soil/ నల్ల నేల</option>
-                <option value="-3">Red/ ఎరుపు నేల</option>  
-                <option value="-4">Laterite Soil/ లాటరైట్ నేల</option>
-                <option value="-5">Mountain Soil/ పర్వత నేల</option>
-                <option value="-6">Arid,Desert Soil/ శుష్క, ఎడారి నేల</option>
-                <option value="-7">Yellow soil/ పసుపు నేల</option>
-                <option value="-8">Forest soil/ అటవీ నేల</option>
+                <option value="none">NONE</option>
+                <option value="-6">ARID, DESERT SOIL</option>
+                <option value="-1">ALLUVIAL SOIL</option>
+                <option value="-2">BLACK SOIL</option>
+                <option value="-8">FOREST SOIL</option>
+                <option value="-4">LATERITE SOIL</option>
+                <option value="-5">MOUNTAIN SOIL</option>
+                <option value="-3">RED SOIL</option>
+                <option value="-7">YELLOW SOIL</option>
             </select>
             <p>
                 <center><input type="image" id="su" src="SUBMITB.jpg" alt="Submit" width="90" height="32" onclick="calculate()"></center>
@@ -328,7 +375,7 @@
        </div>
 
        <div id="F">
-        <h2><i id="sc"  class="fa-solid fa-scale-balanced"></i> <i id="sc1" class="fa-solid fa-scale-balanced fa-shake"></i> Result / ఫలితం :</h2>
+        <h2><i id="sc"  class="fa-solid fa-scale-balanced"></i> <i id="sc1" class="fa-solid fa-scale-balanced fa-shake"></i> Result :</h2>
             <div id="Y">
                 <label >Water Required :</label>
                 <!--span  id="wateroutput"></span>
@@ -358,7 +405,7 @@
        </div>
     </div></center><br><br><br>
     
-<center><h4 style="background-color: rgba(0, 0, 0, 0.49);width: 60%;">NOTE:<br><i class="fa-solid fa-right-long"></i> 1 quintal = 100kg &nbsp; || &nbsp; <i class="fa-solid fa-right-long"></i> 1kg = 1000grams/0.01 quintal <br><i class="fa-solid fa-right-long"></i> 10 quintals = 1000 kg/1 ton &nbsp;|| &nbsp; <i class="fa-solid fa-right-long"></i> 0.5 quintal = 50 kg <br><i class="fa-solid fa-right-long"></i> N:P:K= Nitrogen : Potassium : Phosphorus (Urea) <br> <br>The Above Data Is Approximation And May Slightly Differ On Seasonal Factors</h4></CENTER>
+<center><h4 style="background-color: rgba(0, 0, 0, 0.49);width: 60%;">NOTE:<br><i class="fa-solid fa-right-long"></i> 1 quintal = 100kg &nbsp; || &nbsp; <i class="fa-solid fa-right-long"></i> 1kg = 1000grams/0.01 quintal <br><i class="fa-solid fa-right-long"></i> 10 quintals = 1000 kg/1 ton &nbsp;|| &nbsp; <i class="fa-solid fa-right-long"></i> 0.5 quintal = 50 kg <br><i class="fa-solid fa-right-long"></i> N:P:K= Nitrogen : Potassium : Phosphorus (Urea) <br> <br>The Above Data Is Approximation And May Slightly Differ On Seasonal Factors</h4></CENTER><br><br><br><br><br>
 
 
 
@@ -547,13 +594,41 @@
                  "142":"Pics/fwdvegetables/brinjal1.jpg",
                  "143":"Pics/fwdvegetables/ladiesfinger1.jpg",
 
-                 "144":"Pics/yam3.jpg",
-                 "145":"Pics/colocasia3.jpg",
-                 "146":"Pics/chayote squash1.jpg",
-                 "147":"Pics/tindora1.jpg",
-                 "147":"Pics/cluster beans3.jpg",
-                 "149":"Pics/ash gourd3.jpg",
-                 "150":"Pics/fwdvegetables/snake gourd3.jpg",           
+                 /*"144":"/TELANGANA/TP CP PICS/yam3.jpg",
+                 "145":"/TELANGANA/TP CP PICS/colocasia3.jpg",
+                 "146":"/TELANGANA/TP CP PICS/chayote squash1.jpg",
+                 "147":"/TELANGANA/TP CP PICS/tindora1.jpg",
+                 "147":"/TELANGANA/TP CP PICS/cluster beans3.jpg",
+                 "149":"/TELANGANA/TP CP PICS/ash gourd3.jpg",
+                 "150":"/TELANGANA/TP CP PICS/fwdvegetables/snake gourd3.jpg",*/
+                 
+                 "144":"Pics/cotton1.jpg",
+                "145":"Pics/sugercane1.jpg",
+                "146":"Pics/Tea1.jpg",
+                "147":"Pics/Coffee.png",
+                "148":"Pics/tobbaco1.jpeg",
+                "149":"Pics/jute.jpg",
+                "150":"Pics/rubber2.jpg",
+                "151":"Pics/SUNFLOWER.jpg",
+                "152":"Pics/AERACANUT.jpg",
+                "153":"Pics/vanilla.png",
+                "154":"Pics/kenaf.jpg",
+                "155":"Pics/Flexseeds.png",
+                "156":"Pics/Tapioca.jpg",
+                "157":"Pics/cocoa.jpg",
+                "158":"Pics/betalleaf1.jpg",
+                "159":"Pics/GUAR.jpg",
+                "161":"Pics/ALOEVERA.jpg",
+                "162":"Pics/mungbeans.jpg",
+                "163":"Pics/URADBEAN.jpg",
+                "164":"Pics/bengalgram1.jpg",
+                "165":"Pics/RAGI.jpg",
+                "166":"Pics/bajra.jpg",
+                "167":"Pics/barley2.jpg",
+                "168":"Pics/ricepaddy.jpg",
+                "169":"Pics/wheat2.jpg",
+                "170":"Pics/GROUNDNUTFARM1.jpg",
+                "171":"Pics/sesame2.jpg"           
              
       };
 
@@ -680,13 +755,41 @@
                  "143":"ladiesfinger1",
 
 
-                 "144":"yam3",
+                 /*"144":"yam3",
                  "145":"colocasia3",
                  "146":"chayote squash1",
                  "147":"tindora1",
                  "148":"cluster beans3",
                  "149":"ash gourd3",
-                 "150":"snake gourd3"
+                 "150":"snake gourd3"*/
+
+                 "144":"COTTON",
+                "145":"SUGARCANE",
+                "146":"TEA",
+                "147":"COFFEE",
+                "148":"TOBACCO",
+                "149":"JUTE",
+                "150":"RUBBER",
+                "151":"SUNFLOWER",
+                "152":"AERACANUT",
+                "153":"VANILLA",
+                "154":"KENAF",
+                "155":"FLAXSEEDS",
+                "156":"TAPIOCA",
+                "157":"COCOA",
+                "158":"BETEL LEAF",
+                "159":"GUAR",
+                "161":"ALOEVERA",
+                "162":"MUNGBEAN",
+                "163":"URADBEAN",
+                "164":"BENGALGRAM",
+                "165":"RAGI",
+                "166":"BAJRA",
+                "167":"BARLEY",
+                "168":"RICE",
+                "169":"WHEAT",
+                "170":"GROUNDNUT",
+                "171":"SESAME"
 
 
         // Add h3 text for other options as needed
