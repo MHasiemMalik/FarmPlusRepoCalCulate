@@ -107,8 +107,7 @@ document.getElementById('wateroutput').value = num1 + "-" + sum;
 
 
 function calculate() {
-  document.getElementById("sc1").style.display = "inline-block";
-  document.getElementById("sc").style.display = "none";
+  
   
   
   // Get the selected value from the select element
@@ -5931,7 +5930,8 @@ else {
     console.log(c)
  }
 
-
+ document.getElementById("sc1").style.display = "inline-block";
+ document.getElementById("sc").style.display = "none";
 
 /*
 CODE 01===========================================================
