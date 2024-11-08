@@ -204,7 +204,7 @@
         <div id="X">
 
             <label for="country">Crop name :</label>
-            <select id="cropdata" onchange="displaySelectedImage()">
+            <select id="cropdata" required onchange="displaySelectedImage()">
                 <option value="none">NONE</option>
                 <option value="152">AERACANUT</option>
                 <option value="107">AJWAIN SEEDS</option>
@@ -379,9 +379,9 @@
                 
             </select><br><br>
              <label >Quantity(in quintals) :</label>
-            <input class="inpdt"  type="number" id="area" placeholder="Enter no. of quintals" required><br><br>
+            <input class="inpdt" required type="number" id="area" placeholder="Enter no. of quintals" ><br><br>
             <label >Soil Type :</label>
-            <select id="soil" onchange="displaySelectedSoilImage()">
+            <select id="soil" required onchange="displaySelectedSoilImage()">
                 <option value="none">NONE</option>
                 <option value="-6">ARID, DESERT SOIL</option>
                 <option value="-1">ALLUVIAL SOIL</option>
@@ -689,7 +689,7 @@
                   "47" :"apple  ",
                   "5" :"banana  ",
                   "52" :"Berries  ",
-                  "53" :"cashwe apple  ",
+                  "53" :"CASHEW",
                   "54" :"CHERRY  ",
                   "57" :"COCONUT  ",
                   "58" :"CUSTARD APPLE  ",
@@ -751,32 +751,32 @@
                   "117" :"GALANGAL  ",
                   "50" :"Tomato  ",
                   "18" :"Potato   ",
-                  "119":"pumpkin1",
+                  "119":"pumpkin",
                 
-                 "120":"beetroot1",
-                 "121":"cucumber3",
-                 "122":"peas3",
-                 "123":"radish3",
-                 "124":"beans3",
-                 "125":"sweetpotato3.jpeg",
+                 "120":"beetroot",
+                 "121":"cucumber",
+                 "122":"peas",
+                 "123":"radish",
+                 "124":"beans",
+                 "125":"sweet potato",
                  "126":"drumstick1",
-                 "127":"bitter gourd3",
+                 "127":"bitter gourd",
                  "128":"capsicum1",
-                 "129":"red chilli3",
-                 "130":"green chilli3",
-                 "131":"garlic3",
-                 "132":"onion3",
-                 "133":"carrot3",
-                 "134":"cauliflower3",
-                 "135":"cabbage3",
-                 "136":"spinach3",
-                 "137":"bottle gourd3",
-                 "138":"ridge gourd3",
-                 "139":"corn3",
-                 "140":"broccoli3",
+                 "129":"red chilli",
+                 "130":"green chilli",
+                 "131":"garlic",
+                 "132":"onion",
+                 "133":"carrot",
+                 "134":"cauliflower",
+                 "135":"cabbage",
+                 "136":"spinach",
+                 "137":"bottle gourd",
+                 "138":"ridge gourd",
+                 "139":"corn",
+                 "140":"broccoli",
                  "141":"turnip1",
-                 "142":"brinjal1",
-                 "143":"ladiesfinger1",
+                 "142":"Brinjal",
+                 "143":"ladies finger",
 
 
                  /*"144":"yam3",
@@ -835,6 +835,8 @@
 
     }
       </script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
 <!--form {

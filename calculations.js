@@ -102,9 +102,9 @@ document.getElementById('wateroutput').value = num1 + "-" + sum;
 
 
 function calculate() {
-
   document.getElementById("sc1").style.display = "inline-block";
   document.getElementById("sc").style.display = "none";
+  
   
   // Get the selected value from the select element
   const num1 = parseInt(document.getElementById('cropdata').value);
@@ -116,10 +116,22 @@ function calculate() {
  const hq=126;// used for converting area to heactor
 
 
-  // Perform the addition
-  //const sum = num1 + num2 + num3;
-     //#1 Tomato
-  if (num1 === 50) {
+ if (!num1 || num1 === "none") {
+  swal("Details required!", "Please Select A Crop Name!", "error");              
+  return;
+}
+else if(!num2) {
+  // alert(".");
+   swal("Details required!", "Please Enter The Quantity!", "error");
+   return;
+ }
+else if(!num3 || num3 === "none") {
+ // alert("Please select a soil type.");
+  swal("Details required!", "Please Select A Soil Type!", "error");
+  return;
+}
+
+else if (num1 === 50) {
     const w1=500,w2=600,t1=3,s1=200,s2=300,sK=0.001,n1=1200,n2=1500,N=1.5,P=0.8,p1=600,p2=800,ar=500,arA=0.000247;
      
    if(num3== -2 || num3== -3 ||num3== -4 || num3== -7 ){
@@ -1479,10 +1491,10 @@ if(num1===34){
 }
 //apple
 if(num1===47){
-   const w1=3000,w2=4000,N=300/hq,P=120/hq,K=200/hq,s1=1.5,sK=0.001,t1=8,ar=100,arA=0.000247;
+   const w1=3000,w2=4000,N=300/hq,P=120/hq,K=200/hq,s1=1.5,sK=0.001,t1=3,ar=100,arA=0.000247;
    if(num3== -2 || num3==-7){
     document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
-    document.getElementById('timetaken').value =t1+"-10"+" months";;
+    document.getElementById('timetaken').value =t1+"-6"+" years";;
     document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
     document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
     document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
@@ -1490,7 +1502,7 @@ if(num1===47){
    else if(num3==-1 || num3==-3 || num3==-4){
     const w1=2500,w2=3500;
     document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
-    document.getElementById('timetaken').value =t1+"-10"+" months";;
+    document.getElementById('timetaken').value =t1+"-6"+" years";;
     document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
     document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
     document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
@@ -1499,7 +1511,7 @@ if(num1===47){
    else if(num3== -5 || num3== -8){
     const w1=2000,w2=3000;
     document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
-    document.getElementById('timetaken').value =t1+"-10"+" months";;
+    document.getElementById('timetaken').value =t1+"-6"+" years";;
     document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
     document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
     document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
@@ -1507,7 +1519,7 @@ if(num1===47){
    else{
     const w1=4000,w2=5000;
     document.getElementById('wateroutput').value =(w1*num2).toFixed(2) +"-"+(w2*num2).toFixed(2)  + " liters " +" per week";
-    document.getElementById('timetaken').value =t1+"-10"+" months";;
+    document.getElementById('timetaken').value =t1+"-6"+" years";;
     document.getElementById('fert').value = "("+(N*num2).toFixed(2) +"N-"+(P*num2).toFixed(2) +"P-"+ ( K*num2).toFixed(2) +"K )kgs";
     document.getElementById('seed').value = (s1*num2).toFixed(2)+"gm"+"-"+"("+(s1*sK*num2).toFixed(3) +"kg)";
     document.getElementById('cost').value = (ar*num2).toFixed(2) +"sq meters"+"("+(ar*arA*num2).toFixed(3) +"acres)"; 
