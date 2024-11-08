@@ -75,6 +75,8 @@ document.getElementById('wateroutput').value = num1 + "-" + sum;
 
 */function reset() {
   // Reset the selected value in the select element
+
+
   document.getElementById('wateroutput').selectedIndex = 0;
 
   document.getElementById('cropdata').selectedIndex = 0;
@@ -97,6 +99,9 @@ document.getElementById('wateroutput').value = num1 + "-" + sum;
   document.getElementById('fert').value = '';
   document.getElementById('seed').value = '';
   document.getElementById('cost').value = '';
+
+  swal("Reset Completed", "Enter New Details", "success");
+                        
 }
 
 
@@ -117,17 +122,17 @@ function calculate() {
 
 
  if (!num1 || num1 === "none") {
-  swal("Details required!", "Please Select A Crop Name!", "error");              
+  swal("Details Required!", "Please Select A Crop Name!", "error");              
   return;
 }
 else if(!num2) {
   // alert(".");
-   swal("Details required!", "Please Enter The Quantity!", "error");
+   swal("Details Required!", "Please Enter The Quantity!", "error");
    return;
  }
 else if(!num3 || num3 === "none") {
  // alert("Please select a soil type.");
-  swal("Details required!", "Please Select A Soil Type!", "error");
+  swal("Details Required!", "Please Select A Soil Type!", "error");
   return;
 }
 
