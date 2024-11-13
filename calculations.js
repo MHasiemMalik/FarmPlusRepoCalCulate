@@ -124,7 +124,7 @@ function calculate() {
   swal("Details Required!", "Please Select A Crop Name!", "error");              
   return;
 }
-else if(!num2) {
+else if(!num2 || num2<0) {
   // alert(".");
    swal("Details Required!", "Please Enter The Quantity!", "error");
    return;
